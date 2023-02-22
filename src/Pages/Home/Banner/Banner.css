@@ -1,0 +1,10 @@
+.carousel-img:after {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(200,47,75,0.5) 0%, rgba(220,66,50,0) 100%);
+}

@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
+import router from './Router/Routes/Routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div className='bg-black text-pink-500 text-center min-h-screen text-7xl font-bold flex items-center justify-center'>
+    //   <img className='w-20' src="https://i.ibb.co/rdZ8qjY/android-chrome-192x192.png" alt="" /> Musicademy
+    // </div>
+
+    <div className=' text-center w-5/6 mx-auto'>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

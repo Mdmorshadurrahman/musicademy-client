@@ -1,0 +1,56 @@
+[
+    {
+        "course_id":"1",
+        "title": "Acoustic Complete Course",
+        "image":"https://i.ibb.co/ZNLFR62/man-with-guitar-creates-music-plays-night.jpg",
+        "price":"49.00",
+        "description":"Throughout the Beginner Guitar Quick-Start Series, we’ll include the most important things you need to know be successful at playing guitar right away. First we’ll cover basics like how to tune your guitar, how to hold your guitar, and the parts of the guitar. After that, we’ll get into technique, how to strum, how to make your first chords, and how to play your first song.By the end of these 12 lessons, you’ll know how to hold the guitar, identify the parts of the acoustic and electric guitar, tune the guitar, play four important guitar chords, strum the guitar, and even combine all these things to play your very first song. Getting into playing music right away is going to be great motivation to get you going. Once you've completed these lessons you’ll have a solid foundation for your future guitar playing and you’ll have a good idea of what you should work on next.",
+        "duration": "12",
+        "total_lesson":12
+    },
+    {
+        "course_id":"2",
+        "title": "Ukulele Complete Course",
+        "image": "https://i.ibb.co/wh8JxFM/lessons-musical-instrument-children-s-development-family-values-concept-children-s-friendship-family.jpg",
+        "price":"39.00",
+        "description":"Throughout the Beginner Ukulele Quick-Start Series, we’ll include the most important things you need to know be successful at playing ukulele right away. First we’ll cover basics like how to tune your ukulele, how to hold your ukulele, and the parts of the ukulele. After that, we’ll get into technique, how to strum, how to make your first chords, and how to play your first song.By the end of these 10 lessons, you’ll know how to hold the ukulele, identify the parts of the acoustic and electric ukulele, tune the ukulele, play four important ukulele chords, strum the ukulele, and even combine all these things to play your very first song. Getting into playing music right away is going to be great motivation to get you going. Once you've completed these lessons you’ll have a solid foundation for your future ukulele playing and you’ll have a good idea of what you should work on next.",
+        "duration": "8",
+        "total_lesson":10
+    },
+    {
+        "course_id":"3",
+        "title": "Piano Complete Course",
+        "image":"https://i.ibb.co/zmShHNL/female-hands-play-musical-keys-soft-focus.jpg",
+        "price":"55.00",
+        "description":"Throughout the Beginner Piano Quick-Start Series, we’ll include the most important things you need to know be successful at playing Piano right away. First we’ll cover basics like how to tune your Piano, how to hold your Piano, and the parts of the Piano. After that, we’ll get into technique, how to strum, how to make your first chords, and how to play your first song.By the end of these 18 lessons, you’ll know how to hold the Piano, identify the parts of the acoustic and electric Piano, tune the Piano, play four important Piano chords, strum the Piano, and even combine all these things to play your very first song. Getting into playing music right away is going to be great motivation to get you going. Once you've completed these lessons you’ll have a solid foundation for your future Piano playing and you’ll have a good idea of what you should work on next.",
+        "duration": "16",
+        "total_lesson":18
+    },
+    {
+        "course_id":"4",
+        "title": "Electric Guitar Complete Course",
+        "image":"https://i.ibb.co/VYVpxHF/musician-playing-electric-guitar.jpg",
+        "price":"39.00",
+        "description":"Throughout the Beginner Guitar Quick-Start Series, we’ll include the most important things you need to know be successful at playing guitar right away. First we’ll cover basics like how to tune your guitar, how to hold your guitar, and the parts of the guitar. After that, we’ll get into technique, how to strum, how to make your first chords, and how to play your first song.By the end of these 14 lessons, you’ll know how to hold the guitar, identify the parts of the acoustic and electric guitar, tune the guitar, play four important guitar chords, strum the guitar, and even combine all these things to play your very first song. Getting into playing music right away is going to be great motivation to get you going. Once you've completed these lessons you’ll have a solid foundation for your future guitar playing and you’ll have a good idea of what you should work on next.",
+        "duration": "12",
+        "total_lesson":14
+    },
+    {
+        "course_id":"5",
+        "title": "Violin Complete Course",
+        "image":"https://i.ibb.co/SPvKm7h/side-view-male-musician-playing-violin.jpg",
+        "price":"35.00",
+        "description":"Throughout the Beginner Violin Quick-Start Series, we’ll include the most important things you need to know be successful at playing Violin right away. First we’ll cover basics like how to tune your Violin, how to hold your Violin, and the parts of the Violin. After that, we’ll get into technique, how to strum, how to make your first chords, and how to play your first song.By the end of these 10 lessons, you’ll know how to hold the Violin, identify the parts of the acoustic and electric Violin, tune the Violin, play four important Violin chords, strum the Violin, and even combine all these things to play your very first song. Getting into playing music right away is going to be great motivation to get you going. Once you've completed these lessons you’ll have a solid foundation for your future Violin playing and you’ll have a good idea of what you should work on next.",
+        "duration": "12",
+        "total_lesson":10
+    },
+    {
+        "course_id":"6",
+        "title": "Combo Guitar Course(Electric + Acoustic)",
+        "image":"https://i.ibb.co/827xBC6/acoustic-guitar-empty-notebook-colored-background-top-view.jpg",
+        "price":"60.00",
+        "description":"Throughout the Beginner Guitar Quick-Start Series, we’ll include the most important things you need to know be successful at playing guitar right away. First we’ll cover basics like how to tune your guitar, how to hold your guitar, and the parts of the guitar. After that, we’ll get into technique, how to strum, how to make your first chords, and how to play your first song.By the end of these 22 lessons, you’ll know how to hold the guitar, identify the parts of the acoustic and electric guitar, tune the guitar, play four important guitar chords, strum the guitar, and even combine all these things to play your very first song. Getting into playing music right away is going to be great motivation to get you going. Once you've completed these lessons you’ll have a solid foundation for your future guitar playing and you’ll have a good idea of what you should work on next.",
+        "duration": "22",
+        "total_lesson":22
+    }
+]
