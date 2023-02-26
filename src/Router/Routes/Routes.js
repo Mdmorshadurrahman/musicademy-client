@@ -1,5 +1,4 @@
 import Main from "../../Layout/Main";
-import Cart from "../../Pages/Cart/Cart";
 import Courses from "../../Pages/Courses/Courses";
 import CoursesDetails from "../../Pages/CoursesDetails/CourseDetails/CoursesDetails";
 import Home from "../../Pages/Home/Home/Home";
@@ -46,15 +45,13 @@ const router = createBrowserRouter([
                 element:<CoursesDetails/>
             },
             {
-                path: '/cart',
-                element:<Privateroute><Cart/></Privateroute>
-            },
-            {
-                path: '/mycourses',
+                path: '/mycourses/:id',
+                loader: ({params}) =>fetch(`http://localhost:5000/mycourses/${params.id}`),
                 element:<Privateroute><MyCourses/></Privateroute>
             },
             {
-                path: '/myreviews',
+                path: '/myreviews/:id', 
+                loader: ({params}) =>fetch(`http://localhost:5000/myreviews/${params.id}`),
                 element:<Privateroute><MyReviews/></Privateroute>
             }
         ]

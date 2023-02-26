@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { MdQueueMusic } from "react-icons/md";
 import { AuthContext } from '../../../context/UserContext';
 import { getAuth } from 'firebase/auth';
@@ -7,6 +7,7 @@ import { GiShoppingCart } from "react-icons/gi";
 
 const Header = () => {
     const {user,logout} = useContext(AuthContext);
+    const navigate = useNavigate();
     const auth = getAuth();
     const handleLogout = () =>{
         logout()
@@ -16,8 +17,8 @@ const Header = () => {
         .catch(error =>{
             console.error(error);
         })
+        navigate('/login')
     }
-    // console.log(auth.currentUser.emailVerified)
     return (
         <div className='my-10'>
             <div className="lg:navbar ">
@@ -34,9 +35,8 @@ const Header = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content p-2 shadow bg-base-100 rounded-box w-52">
                             <li className=' hover:text-4xl'><NavLink to={'/courses'} className='bg-white text-black hover:text-violet-600'>Courses</NavLink></li>
                             {user?.emailVerified?<>
-                            <li className='hover:text-4xl'><NavLink to={'/mycourses'} className='bg-white hover:text-violet-600 text-black hover:border-violet-600 hover:border-2'>My Courses</NavLink></li>
-                            <li className='hover:text-4xl'><NavLink to={'/myreviews'} className='bg-white hover:text-violet-600 text-black hover:border-violet-600 hover:border-2'>My Reviews</NavLink></li>
-                            <li className='hover:text-4xl'><NavLink to={'/cart'} className='bg-white hover:text-violet-600 text-black hover:border-violet-600 hover:border-2'><GiShoppingCart/></NavLink></li>
+                            <li className='hover:text-4xl'><NavLink to={`/mycourses/${user.email}`} className='bg-white hover:text-violet-600 text-black hover:border-violet-600 hover:border-2'>My Courses</NavLink></li>
+                            <li className='hover:text-4xl'><NavLink to={`/myreviews/${user.email}`} className='bg-white hover:text-violet-600 text-black hover:border-violet-600 hover:border-2'>My Reviews</NavLink></li>
                             <li className=''><p className='bg-white text-violet-600 border-2 border-violet-600'>Hi, {user.displayName?user.displayName.split(" ")[0].toUpperCase():user.email.toUpperCase()}</p></li>
                             <li className='hover:text-4xl'><button onClick={handleLogout} className='bg-white hover:text-violet-600 hover:border-violet-600 hover:border-2'>Logout</button></li>
                             </>:<>
@@ -51,9 +51,8 @@ const Header = () => {
                     <ul className="menu menu-horizontal px-1 text-2xl bg-base-100 font-extralight ">
                         <li className=' hover:text-4xl'><NavLink to={'/courses'} className='bg-white text-black hover:text-violet-600 hover:border-violet-600 hover:border-2'>Courses</NavLink></li>
                         {user?.emailVerified?<>
-                            <li className='hover:text-4xl'><NavLink to={'/mycourses'} className='bg-white text-black hover:text-violet-600 hover:border-violet-600 hover:border-2'>My Courses</NavLink></li>
-                            <li className='hover:text-4xl'><NavLink to={'/myreviews'} className='bg-white text-black hover:text-violet-600 hover:border-violet-600 hover:border-2'>My Reviews</NavLink></li>
-                            <li className='hover:text-4xl'><NavLink to={'/cart'} className='bg-white text-black hover:text-violet-600 hover:border-violet-600 hover:border-2'><GiShoppingCart/></NavLink></li>
+                            <li className='hover:text-4xl'><NavLink to={`/mycourses/${user.email}`} className='bg-white text-black hover:text-violet-600 hover:border-violet-600 hover:border-2'>My Courses</NavLink></li>
+                            <li className='hover:text-4xl'><NavLink to={`/myreviews/${user.email}`} className='bg-white text-black hover:text-violet-600 hover:border-violet-600 hover:border-2'>My Reviews</NavLink></li>
                             <li className=''><p className='bg-white text-violet-600 border-2 border-violet-600'>Hi, {user.displayName?user.displayName.split(" ")[0].toUpperCase():user.email.toUpperCase()}</p></li>
                             <li className='hover:text-4xl'><button onClick={handleLogout} className='bg-white hover:text-violet-600 hover:border-violet-600 hover:border-2'>Logout</button></li>
                             </>:<>

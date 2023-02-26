@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import DetailsCard from '../DetailsCard/DetailsCard';
 import Reviews from '../Reviews/Reviews';
+import DetailsCard from '../../Shared/DetailsCard/DetailsCard';
 
 const CoursesDetails = () => {
     const details = useLoaderData();
@@ -12,7 +12,9 @@ const CoursesDetails = () => {
             key={details._id}
             details={details}
             />
-            <Reviews/>
+            <Reviews
+            details = {details}
+            />
         </div>
     );
 };
