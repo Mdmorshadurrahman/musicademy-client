@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const CoursesHome = () => {
     const [courses,setCourses] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/courses')
+        fetch('https://musicademy-server.vercel.app/courses')
         .then(res=>res.json())
         .then(data => setCourses(data.courses))
     },[]);

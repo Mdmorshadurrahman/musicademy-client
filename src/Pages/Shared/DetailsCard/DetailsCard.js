@@ -7,14 +7,14 @@ const DetailsCard = ({details}) => {
     const {user} = useContext(AuthContext);
     const {image,description,duration,price,title,total_lesson,course_id,_id} = details;
     const infoForMyCourse ={
-        user_email : user.email,
+        user_email : user?user.email:"unregistered",
         image,
         description,duration,price,title,total_lesson,course_id,_id
     }
     const navigate = useNavigate();
     const handleAddToCart = () => {
         if(user){
-            fetch('http://localhost:5000/mycourses', {
+            fetch('https://musicademy-server.vercel.app/mycourses', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -36,7 +36,7 @@ const DetailsCard = ({details}) => {
         console.log(id)
         const acknowledgement = window.confirm('Do you want to delete this item?');
         if(acknowledgement){
-            fetch(`http://localhost:5000/mycourses/${id}`, {
+            fetch(`https://musicademy-server.vercel.app/mycourses/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())

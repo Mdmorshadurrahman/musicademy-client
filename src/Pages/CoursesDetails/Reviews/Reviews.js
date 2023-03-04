@@ -11,7 +11,7 @@ const Reviews = ({details}) => {
     const navigate = useNavigate();
     console.log(reviews)
     useEffect(()=>{
-        fetch('http://localhost:5000/myreviews')
+        fetch('https://musicademy-server.vercel.app/myreviews')
         .then(res=>res.json())
         .then(data => setReviews(data))
     },[]);

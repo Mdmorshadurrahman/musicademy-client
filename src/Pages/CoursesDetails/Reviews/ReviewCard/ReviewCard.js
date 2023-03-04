@@ -23,7 +23,7 @@ const ReviewCard = ({details}) => {
         }
         console.log(name,email,review);
         form.reset();
-        fetch('http://localhost:5000/myreviews', {
+        fetch('https://musicademy-server.vercel.app/myreviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

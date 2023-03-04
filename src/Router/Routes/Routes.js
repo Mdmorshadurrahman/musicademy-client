@@ -30,7 +30,7 @@ const router = createBrowserRouter([
             {
                 path: '/courses',
                 loader: async() =>{
-                    return fetch('http://localhost:5000/courses')
+                    return fetch('https://musicademy-server.vercel.app/courses')
                 },
                 element:<Courses/>,
                 
@@ -41,17 +41,17 @@ const router = createBrowserRouter([
             },
             {
                 path: '/courses/:id',
-                loader: ({params}) =>fetch(`http://localhost:5000/courses/${params.id}`),
+                loader: ({params}) =>fetch(`https://musicademy-server.vercel.app/courses/${params.id}`),
                 element:<CoursesDetails/>
             },
             {
                 path: '/mycourses/:id',
-                loader: ({params}) =>fetch(`http://localhost:5000/mycourses/${params.id}`),
+                loader: ({params}) =>fetch(`https://musicademy-server.vercel.app/mycourses/${params.id}`),
                 element:<Privateroute><MyCourses/></Privateroute>
             },
             {
                 path: '/myreviews/:id', 
-                loader: ({params}) =>fetch(`http://localhost:5000/myreviews/${params.id}`),
+                loader: ({params}) =>fetch(`https://musicademy-server.vercel.app/myreviews/${params.id}`),
                 element:<Privateroute><MyReviews/></Privateroute>
             }
         ]
