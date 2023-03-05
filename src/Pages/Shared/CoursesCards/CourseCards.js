@@ -6,11 +6,11 @@ const CourseCards = ({course,length}) => {
     // console.log(course)
     return (
         <div>
-            <div className="card lg:card-side h-fit bg-base-100 shadow-xl border-2 border-violet-600">
-                <figure className='w-3/5 h-full'>
+            <div className="card min-[1196px]:card-side h-fit bg-base-100 shadow-xl border-2 border-violet-600">
+                <figure className='min-[1196px]:w-3/5 w-full h-full'>
                     <img src={image} alt="Album"/>
                 </figure>
-                <div className="card-body w-2/5 h-full">
+                <div className="card-body min-[1196px]:w-2/5 w-full h-full">
                     <h1 className="card-title">{course_id}. {title}</h1>
                     <h2></h2>
                     <p>{length>3?description:description.slice(0,100)}</p>

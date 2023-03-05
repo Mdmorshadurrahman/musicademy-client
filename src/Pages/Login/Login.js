@@ -7,7 +7,7 @@ import { getAuth, sendEmailVerification, sendPasswordResetEmail } from 'firebase
 
 const Login = () => {
     const {login,loginWithGoogle} = useContext(AuthContext);
-    const [userEmail,setUserEmail] = useState('');
+    // const [userEmail,setUserEmail] = useState('');
     const navigate = useNavigate();
     const handleSubmit = event =>{
         event.preventDefault();
